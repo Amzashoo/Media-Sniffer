@@ -1,0 +1,52 @@
+#!/usr/bin/python
+import sys, os, glob, loggingi
+import rdflib
+import logging, mutagen
+from mutagen.mp3 import MP3
+import musicbrainzngs as mbngs
+"""from musicbrainz2.webservice"""
+
+path = sys.argv[1]
+
+def explore(path, level, deal):
+  for infile in glob.glob(os.path.join(path, '*')):
+    if os.path.isdir(infile):
+      deal(infile, level)
+      explore(infile, level+1, deal)
+    else:
+      deal(infile,level)
+
+def deal(infile, level):  
+  if(str.lower(os.path.splitext(infile)[-1]) == ".mp3"):
+    # Getting MP3 metadata from the file
+    mp3file = MP3(infile)
+    # Trying to get information from the metadata
+    mp3tags = {}
+    mp3tags["title"] = "Unknown track"
+    mp3tags["artist"] = "Unknown artist"
+    try:
+      mp3tags["title"] = mp3file["TIT2"]
+    except:
+      pass
+    try:
+      mp3tags["artist"] = mp3file["TPE2"]
+    except:
+      pass
+    # Printing the information
+    print "MP3 file found :"
+    print "	", mp3tags["title"], "by", mp3tags["artist"]
+    get_recording_by_name(mp3tags["title"]
+#  if(os.path.splitext(infile)[-1] == ".ogg"):
+#     pass
+#  for i in range(level):
+#		sys.stdout.write ('	')
+#	sys.stdout.write(infile+'\n')
+#	sys.stdout.flush
+
+def get_recording_by_name(name):
+  query = name
+  results = mbngs.search_recordings(query)
+  print(results)
+
+explore(path,0, deal)
+

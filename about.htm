@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charest="UTF-8">
+  <meta http-equiv="Content-Type" CONTENT="text/html;charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <title>Hamza's awesome app</title>
+  <script src="audiojs/audio.min.js"></script>
+  <script>
+     audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script>
+</head>
+<body>
+  <div id="menuBar">
+    <table id="menu">
+      <tr class="button">
+      <td class="button"><a href="explore_page.py">Explore</a></td>
+      <td class="button"><a href="advices.py">Advices</a></td>
+      <td class="button"><a href="about.htm">About</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="content">
+    <div id="contentBody">
+
+<table border="10" id="titletab"><tr id="row1"><td rowspan="2" id="imagetd"> <img src="images/audio-volume-high.png"/> </td><td id="song_td"><div id="song_title">About</div></td></tr><tr id="row2"><td id="song_artist"><div id="song_artist">Media Sniffer</div></td></tr><tr><td id="foot_cell"></td>  </br> <td class="element">Media Sniffer enables you to scan a folder of your computer for audio files and tries to grab information about your songs from the MusicBrainz knowledge database. </br> Required software : <ul> <li> Python 2.7</li> <li> Levensthein for Python. </li> <li>Mutagen for Python.</li> <li> Karrigell web server. </li> <li> RDFLib for Python.</li></ul></td></tr></table>
+
+    </div>
+  </div>
+</body>
+
+
+

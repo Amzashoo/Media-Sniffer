@@ -1,0 +1,266 @@
+/* Custom fonts */
+@font-face {
+    font-family: WEB;
+    src: url("fonts/WalkwayExpandBlack.ttf");
+}
+@font-face {
+    font-family: WOE;
+    src: url("fonts/WalkwayObliqueExpand.ttf");
+}
+
+
+body
+{
+  background-color : #182520;;
+  color: #222222;
+  font-family: WEB;
+}
+
+#menuBar
+{
+  margin-top: 50px;
+  margin-left: auto;
+  width: 59.5%;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.button
+{
+  border-top: 3px #222222 solid;
+  font-family: WEB;
+  text-align: center;
+  height: 60px;
+  width: 8%;
+  color: grey;
+  border-radius: 10px;
+}
+
+#content
+{
+  position: absolute;
+  top: 120px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+a
+{
+  color: #AABBAA;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #444444;
+  font-style: oblique;
+}
+
+#contentBody
+{
+  border-radius: 10px;
+  width: 59%;
+  background-color: #111111;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: auto;
+  padding-top: 0%;
+  height: 90%;
+  bottom: 0px;
+  overflow: auto;
+}
+
+#uparrow
+{
+  color: grey;
+  font-size: 0.7em;
+  text-align: center;
+  height: 1.3em;
+  
+}
+
+#downarrow
+{
+  position: absolute;
+  bottom: 10%;
+  height: 20px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+.item-text
+{
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+.item a
+{
+}
+.item
+{
+  padding: 3%;
+  vertical-align: middle;
+  background-color: #666666;
+}
+
+.itemA
+{
+  background-color: #111111;
+  vertical-align: center;
+  padding: 3%;
+
+}
+
+img
+{
+  vertical-align: middle;
+}
+
+#song_picture
+{
+  display: inline;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#song_title
+{
+  margin-left: 5%;
+  margin-right: auto;
+  vertical-align: bottom;
+  font-size: 1.5em;
+  font-family: WEB;
+  color: #777777;
+}
+
+#song_artist a
+{
+  color: black;
+}
+
+#song_artist a hover
+{
+  color: #999999;
+}
+
+#song_artist
+{
+  background-color: #333333;
+  color: black;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 5%;
+  width: 80%;
+  vertical-align: text-top;
+  font-size: 1.1em;
+  font-family: WOE;
+}
+
+#song_td
+{
+  vertical-align: bottom;
+  margin-top: 10%;
+  border-bottom: 2px solid #222222;
+}
+
+#imagetd
+{
+  hright: 0px;
+  border: 0px;
+  width: 0px;
+
+}
+
+#titletab
+{
+  width: 100%;
+}
+
+#row1
+{
+  color: #666666;
+  background-color: #111111;
+  height: 10%;
+}
+
+#row2
+{
+  background-color: #666666;
+  height: 15%;
+}
+
+#row3
+{
+  background-color: #111111;
+  color: #666666;
+  height: 3%;
+}
+
+#row_even
+{
+  height: 3%;
+  background-color: #333333;
+}
+
+#row_odd a
+{
+  color: #666666;
+}
+#row_odd a hover
+{
+  color: #111111;
+}
+
+#row_odd
+{
+  height: 3%;
+  background-color: #111111;
+  color: #666666;
+}
+
+#foot_cell
+{
+  background-color: #111111;
+  border: 0px;
+}
+.section
+{
+  border:0px;
+  padding-top: 1em;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.element
+{
+  border-left: 3px solid #222222;
+  vertical-align: top;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+
+table
+{
+  height: 100%;
+  position: relative;
+  border-collapse:collapse;
+  border:0px white dotted;
+  bottom: 0px;
+  background-color: #111111;
+}
+tr
+{
+/*  border: 2px red dotted; */
+}
+td
+{
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: solid 3px #222222;
+}

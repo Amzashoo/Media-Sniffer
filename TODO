@@ -1,0 +1,6 @@
+- Récpuération des infos d'un morceau : OK. (100%)
+- Récupération des infos d'un artiste : OK. (70%)
+- Stockage des infos en local.        : Abandonné.
+- Récupération des objets liés à un tag : TODO.
+- Suggestions.                          : TODO.
+- Interface Web.                        : OK. (80% : minimiser les appels SPARQL)
